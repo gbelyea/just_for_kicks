@@ -1,0 +1,47 @@
+{
+  "name": "just_for_kicks",
+  "version": "1.0.0",
+  "description": "project to mess with various packages",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:production || npm run start:development",
+    "start:development": "nodemon --watch src --exec babel-node src/index.js",
+    "start:production": "node ./build/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbelyea/just_for_kicks.git"
+  },
+  "author": "Greg Belyea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbelyea/just_for_kicks/issues"
+  },
+  "homepage": "https://github.com/gbelyea/just_for_kicks#readme",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@graphql-tools/load-files": "^6.5.1",
+    "@graphql-tools/merge": "^8.2.0",
+    "@graphql-tools/schema": "^8.3.0",
+    "apollo-server-core": "^3.4.0",
+    "apollo-server-express": "^3.4.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.6.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "nodemon": "^2.0.14",
+    "prettier": "^2.4.1"
+  }
+}

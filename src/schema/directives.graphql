@@ -1,0 +1,2 @@
+directive @isAuthenticated on FIELD | FIELD_DEFINITION
+directive @hasPermission(scope: [String]) on FIELD | FIELD_DEFINITION

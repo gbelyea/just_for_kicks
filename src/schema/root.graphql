@@ -1,0 +1,10 @@
+"""
+This file will contain some random queries and return types
+"""
+
+type Query{
+    """
+    This is your hello world query
+    """
+    ExampleQuery: String @isAuthenticated
+}
